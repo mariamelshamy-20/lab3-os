@@ -4,11 +4,11 @@
 
 std::vector<Token> tokenize(const std::string &input)
 {
-    std::vector<Token> tokens;
+    std::vector<Token> tokens; 
     std::istringstream stream(input);
     std::string word;
 
-    while (stream >> word)
+    while (stream >> word) // reads input word by word , el loop bttnafez 3ala kol word
     {
         Token token;
 

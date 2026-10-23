@@ -6,7 +6,7 @@ struct SimpleCommand
 {
 	int _numberOfAvailableArguments;
 	int _numberOfArguments;
-	char **_arguments;
+	char **_arguments; // pointer to array of arguments
 
 	SimpleCommand();
 	void insertArgument(char *argument);
@@ -24,8 +24,8 @@ struct Command
 	int _background;
 	int _append;
 
-	void prompt();
-	void print();
+	void prompt(); //reads,tokenizes,parses,executes,clears
+	void print(); 
 	void execute();
 	void clear();
 
